@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <title>My Academic project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class=darkm id=home>
+    <header>
+        <nav class=topbar>
+            <span style="display: inline-flex;">
+                <img src="./assets/clippng.png" alt=logo class=logopic>
+                <label class="logotext">Petshop</label>
+            </span>
+            <ul>
+                <li><img src="./assets/home.png" class=navlogo>
+                    <a href="#home">Home</a>
+                </li>
+                <li><img src="./assets/petss.png" class="navlogo">
+                    <a href="#pets">Pets</a>
+                </li>
+                <li><img src="./assets/item.png" class="navlogo">
+                    <a href="#acc">Accessories</a>
+                </li>
+                <li><img src="./assets/user.png" class="navlogo">
+                    <a href="#aboutus">About us</a>
+                </li>
+                <input type="checkbox" id="darkcheck">
+                <label for="darkcheck" id=darklabel></label>
+            </ul>
+        </nav>
+    </header>
+    <div class=slider>
+        <div class=slides>
+            <input type="radio" name="slid" id=r1>
+            <input type="radio" name="slid" id=r2>
+            <input type="radio" name="slid" id=r3>
+            <input type="radio" name="slid" id=r4>
+            <input type="radio" name="slid" id=r5>
+            <div class="slide first"><img src="./assets/anim1.jpeg" class=slide></div>
+            <div class=slide><img src="./assets/anim2.jpg" class=slide></div>
+            <div class=slide><img src="./assets/anim3.jpg" class=slide></div>
+            <div class=slide><img src="./assets/anim4.jpg" class=slide></div>
+            <div class=slide><img src="./assets/anim5.jpg" class=slide></div>
+        </div>
+        <div class="clkbtn">
+            <label for=r1 class=cbtn id=b1></label>
+            <label for=r2 class=cbtn id=b2></label>
+            <label for=r3 class=cbtn id=b3></label>
+            <label for=r4 class=cbtn id=b4></label>
+            <label for=r5 class=cbtn id=b5></label>
+        </div>
+    </div>
+    <section class='entireshop' id=pets>
+        <span style="font-size: 40px;">Pet Shop</span>
+        <div class='eachanimal'>
+            <div class=shopheading>
+                Dogs For Sale
+            </div>
+            <div class=petinfo>
+                <div class=eachpet>
+                    <img src='./assets/dog1.jpg' class=eachpic>
+                    <span class=petname>Amogus</span>
+                    Bull Dog Puppy<br />
+                    3 Months Old<br />
+                    <i>Male</i>
+                    Pure Breed<br />
+                    <b>₹50,000</b>
+                </div>
+                <div class=eachpet>
+                    <img src="./assets/dog2.jpg" class=eachpic>
+                    <span class=petname>Big Chungus</span>
+                    Labrador Puppy<br />
+                    <span>1<sup>1/2</sup> Months Old</span>
+                    <i>Female</i>
+                    Pure Breed</br>
+                    <b>₹30,000</b>
+                </div>
+                <div class=eachpet>
+                    <img src="./assets/dog3.jpg" class=eachpic>
+                    <span class=petname>Juan</span>
+                    German-Shephard Puppy<br />
+                    2 Months Old<br />
+                    <i>Female</i>
+                    Mixed Breed(Double Coated)<br>
+                    <b>₹14,000</b>
+                </div>
+                <div class=eachpet>
+                    <img src="./assets/dog4.jpg" class=eachpic>
+                    <span class=petname>Pog Champ</span>
+                    Pug Puppy<br>
+                    20 Days Old<br>
+                    <i>Male</i>
+                    Mixed Breed<br>
+                    <b>₹8,000</b>
+                </div>
+            </div>
+        </div>
+        <div class=eachanimal>
+            <div class=shopheading>
+                Cats For Sale
+            </div>
+            <div class=petinfo>
+                <div class="eachpet">
+                    <img src="assets/kit1.jpg" class=eachpic>
+                    <span class=petname>Sigma, Alpha, Beta(Pack of 3)</span>
+                    3 Feral Kittens<br />
+                    2 Months Old<br />
+                    <i>Male, Male, Female</i>
+                    Feral / Mixed<br />
+                    <b>₹1,000 each</b>
+                </div>
+                <div class="eachpet">
+                    <img src="assets/kit2.jpeg" class=eachpic>
+                    <span class=petname>Karen</span>
+                    Persian Kitten<br />
+                    1 Month Old<br />
+                    <i>Female</i>
+                    Pure(Double Coat)<br />
+                    <b>₹20,000</b>
+                </div>
+                <div class="eachpet">
+                    <img src="assets/kit3.jpg" class=eachpic>
+                    <span class=petname>Schmuserkadser</span>
+                    Siamese Kitten<br />
+                    18 Days Old<br />
+                    <i>Female</i>
+                    Pure(Double Coat)<br />
+                    <b>₹25,000</b>
+                </div>
+            </div>
+        </div>
+        <div class="eachanimal">
+            <div class="shopheading">
+                Other Pets
+            </div>
+            <div class="petinfo">
+                <div class="eachpet">
+                    <img src="./assets/oth1.jpg" class=eachpic>
+                    <span class="petname">Nemo</span>
+                    Goldfish Juvenile<br>
+                    5 Days Old<br>
+                    Golden<br>
+                    <b>₹150</b>
+                </div>
+                <div class="eachpet">
+                    <img src="./assets/oth2.jpg" class=eachpic>
+                    <span class="petname">Chonk</span>
+                    Syrian Hamster Pup<br>
+                    2 Weeks Old<br>
+                    <i>Male</i>
+                    Pure(Dual Coat)<br>
+                    <b>₹3,000</b>
+                </div>
+                <div class="eachpet">
+                    <img src="./assets/oth3.jpg" class=eachpic>
+                    <span class="petname">Boony</span>
+                    Blanc de hotot Bunny<br>
+                    3 Weeks Old<br>
+                    <i>Female</i>
+                    Pure<br>
+                    <b>₹2,000</b>
+                </div>
+                <div class="eachpet">
+                    <img src="./assets/oth4.jpg" class=eachpic>
+                    <span class="petname">Tik and Tok</span>
+                    Parakeet Pair<br>
+                    1 Month Old<br>
+                    <i>Male, Female Pair</i>
+                    Green and BLue with black pattern<br>
+                    <b>₹400</b>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=allaccessories id=acc>
+        <span style="font-size: 35px;">Pet Accessories</span>
+        <div class=eachanimal style="border: none;">
+            <div class=shopheading>Pet Foods</div>
+            <div class="petinfo" style="padding: 6px 0px 0px 8px">
+                <div class="eachpet eachitem">
+                    <img src="./assets/food1.png" class=foodpic>
+                    <span class="petname">Dog Food</span>
+                    Pedigree Chopped Dinner<br>
+                    <i>All dog breeds</i>
+                    Dry Formula, 3KG<br />
+                    Beef, Chicken and whole grains<br>
+                    <b>₹500</b>
+                </div>
+                <div class="eachpet eachitem">
+                    <img src="./assets/food2.png" class=foodpic>
+                    <span class="petname">Cat Food</span>
+                    Whiskas Meal<br>
+                    <i>All cat breeds</i>
+                    Dry Formula, 1.2KG<br />
+                    Salman, Tuna and whole grains<br>
+                    <b>₹300</b>
+                </div>
+                <div class="eachpet eachitem">
+                    <img src="./assets/food3.png" class=foodpic>
+                    <span class="petname">Bird Food</span>
+                    Kaytee Forti Diet<br>
+                    <i>Suitable for parakeet, parrots</i>
+                    Dry seeds, 1KG<br />
+                    Veggies, Whole grains<br>
+                    <b>₹200</b>
+                </div>
+                <div class="eachpet eachitem">
+                    <img src="./assets/food4.png" class=foodpic>
+                    <span class="petname">Rabbit Food</span>
+                    Kaytee Timothy complete<br>
+                    <i>All rabbit breeds</i>
+                    Dry seeds, 3KG<br />
+                    Alfafa, carrot and fibre<br>
+                    <b>₹250</b>
+                </div>
+            </div>
+        </div>
+        <div class="eachanimal" style="border:none;">
+            <div class="shopheading">Pet Items</div>
+            <div class="petinfo" style="padding: 6px 0px 0px 8px">
+                <div class="eachpet eachitem">
+                    <img src="./assets/item1.png" class="foodpic accitem">
+                    <span class="petname">Pet Toy</span>
+                    Soft Cloth Duck<br>
+                    <i>For Dogs and cats</i>
+                    Not Suitable for strong chewer<br>
+                    Polymer non-toxic<br>
+                    <b>₹80</b>
+                </div>
+                <div class="eachpet eachitem">
+                    <img src="./assets/item2.png" class="foodpic accitem">
+                    <span class="petname">Pet Toy</span>
+                    Soft ball squishy<br>
+                    For Dogs and Cats<br>
+                    Plastic non-toxic<br>
+                    <b>₹50</b>
+                </div>
+                <div class="eachpet eachitem">
+                    <img src="./assets/item3.png" class="foodpic accitem">
+                    <span class="petname">Fish Aquarium</span>
+                    Air pumped with flora<br>
+                    <i>For All small and medium fish</i>
+                    150x60x50cm 43 litres<br>
+                    Lighting Effect<br>
+                    <b>₹3000</b>
+                </div>
+                <div class="eachpet eachitem">
+                    <img src="./assets/item4.png" class="foodpic accitem" style="width: 230px;">
+                    <span class="petname">Pet Leash</span>
+                    Strong polymer material, 1m<br>
+                    Suitable for all pets<br>
+                    Hook Closure<br>
+                    Collar not included<br>
+                    <b>₹300</b>
+                </div>
+                <div class="eachpet eachitem">
+                    <img src="./assets/item5.jpg" class="foodpic accitem" style="width: 200px;">
+                    <span class="petname">Bird Cage</span>
+                    Large Spacious Cage<br>
+                    Suitable for most birds<br>
+                    Roof and playground<br>
+                    50x70x40cm<br>
+                    <b>₹2000</b>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=end id=aboutus>
+        <div class=alldivs>
+            <img src="./assets/animal-therapy.png" style="width: 30px; height: 30px; margin-right: 3px;">
+            <div class=eachabt>About Us<div class=actualtext>
+                Our love for pets made us start our shop, we are dedicated to delivering the best 
+                customer service and the highest quality of pet products</div></div>
+                <div class=eachabt>Reach us at<div class=actualtext>223, Godavari Laxmi Ind. Cmplex, Pokharan Road,
+                    Vartak Nagar, Thane (w)<br>
+                    Mumbai, Maharashtra, 400606<br>
+                	+91-22-2225856282</div></div>
+                <div class=eachabt>Follow us at<div class=actualtext style="font-weight: bold;">
+                    <a href="https://www.facebook.com/" target="_blank">Facebook</a><br>
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a><br>
+                    <a href="https://twitter.com/" target="_blank">Twitter</a><br>
+                </div></div>
+        </div>
+    </section>
+</body>
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+</html>

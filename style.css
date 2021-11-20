@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'Ops';
+    src: url(./assets/fonts/open_sans/OpenSans/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: 'UbuntuBold';
+    src: url(./assets/fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url(./assets/fonts/nunito/Nunito-Light.ttf);
+}
+@font-face {
+    font-family: 'Popping';
+    src: url(./assets/fonts/poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Nuni';
+    src: url(./assets/fonts/nunito/Nunito-SemiBold.ttf);
+}
+header{
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+.topbar{
+    background-color: rgb(32, 128, 218); /*blueviolet rgb(32, 128, 218)*/
+    height: 80px;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.topbar ul{
+    font-family: 'Ops';
+    margin: 23px 15px; /*centering btn bar*/
+    float: right;
+    list-style: none;
+    line-height: 30px;
+}
+.topbar ul li{
+    padding: 4px;
+    margin-right: 7px;
+    display: inline;
+}
+.topbar li:hover{
+    transition: 0.3s;
+    background-color: rgb(106, 180, 250); /*#bf7bff*/
+    border-radius: 3px;
+}
+.topbar li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+}
+.topbar li:hover > a{
+    color: black;
+}
+.logotext{
+    font-family: 'Segoe UI';
+    font-variant: small-caps;
+    font-size: 35px;
+    line-height: 80px;
+    padding-left: 6px;
+    margin-left: 200px;
+    color:white
+}
+.navlogo{
+    height: 15px;
+    width: 15px;
+}
+.logopic{
+    height: 100px;
+    width : 200px;
+    background-color: rgb(32, 128, 218);
+    padding-right: 3px;
+    border-radius: 6px;
+    position: absolute;
+}
+.slider{
+    margin-top : 50px;
+    height: 500px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.slides{
+    display: flex;
+    width: 500%;
+    height: 500px;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    height: 500px;
+    width: 100%;
+}
+.slides input{
+    display: none;
+}
+.clkbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+}
+.cbtn{
+    padding:7px;
+    border: 3px solid orangered; 
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    margin-right: 6px;
+    box-shadow: 2px 2px black;
+}
+.cbtn:hover{
+    background-color: #000000 !important;
+}
+#r1:checked ~ .first{
+    margin-left: 0%;
+}
+#r2:checked ~ .first{
+    margin-left: -20%;
+}
+#r3:checked ~ .first{
+    margin-left: -40%;
+}
+#r4:checked ~ .first{
+    margin-left: -60%;
+}
+#r5:checked ~ .first{
+    margin-left: -80%;
+}
+.entireshop, .allaccessories{
+    font-family: monospace;
+    padding: 20px 0px 0px 20px;
+}
+.eachanimal{
+    padding : 10px 0px 0px 10px;
+    overflow: auto;
+    border: 3px solid orange; /*orange limegreen*/
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+.shopheading{
+    font-size: 30px;
+    font-family: Nuni;
+}
+.petinfo{
+    display: flex;
+    flex-direction: row;
+}
+.eachpic{
+    width: 280px;
+    height: 200px;
+    border-radius: 8px;
+}
+.eachpet{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 20px;
+    padding: 11px;
+    line-height: 30px; /*spacious lines*/
+    font-family: 'Popping';
+}
+.petname{
+    font-family: 'UbuntuBold';
+}
+.foodpic{
+    width:150px;
+    height: 180px;;
+}
+.eachitem{
+    display: flex;
+    border: 3px solid chartreuse;
+    border-radius: 5px;
+    align-items: center;
+}
+.accitem{
+    width: fit-content;
+}
+.end{
+    margin-top: 30px;
+    height: max-content;
+    background-color: brown; /*chocolate*/
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.alldivs{
+    display: flex;
+    padding: 6px 0 8px 20px;
+}
+.eachabt{
+    width: 33.33%;
+    font-size: 22px;
+    font-family: 'Nunito';
+    font-weight: bold;
+    overflow: hidden;
+    margin-right: 2px;
+}
+.actualtext{
+    font-weight: initial;
+    font-size: initial;
+    width: 300px;
+    text-align: justify;
+}
+.actualtext a:any-link{
+    color: bisque;
+}
+.actualtext a:hover{
+    font-size: 20px;
+    color: rgb(255, 136, 93); /*coral*/
+}
+#darklabel{
+    background-color: black;
+    padding: 8px 10px 10px 8px;
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+    top: 2px;
+    transition: 0.2s;
+}
+#darkcheck{
+    display: none;
+}
+.darkm{
+    background-color: #303030; /*292c25*/
+    color: whitesmoke;
+}
+body{
+    background-color: wheat;
+    color: black;  
+}
