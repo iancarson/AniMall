@@ -2,7 +2,7 @@
 <html lang=en>
 
 <head>
-    <title>My Academic project</title>
+    <title>Pet Adoption Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -12,7 +12,7 @@
         <nav class=topbar>
             <span style="display: inline-flex;">
                 <img src="./assets/clippng.png" alt=logo class=logopic>
-                <label class="logotext">Petshop</label>
+                <label class="logotext">Pet Shop</label>
             </span>
             <ul>
                 <li><img src="./assets/home.png" class=navlogo>
@@ -20,9 +20,6 @@
                 </li>
                 <li><img src="./assets/petss.png" class="navlogo">
                     <a href="#pets">Pets</a>
-                </li>
-                <li><img src="./assets/item.png" class="navlogo">
-                    <a href="#acc">Accessories</a>
                 </li>
                 <li><img src="./assets/user.png" class="navlogo">
                     <a href="#aboutus">About us</a>
@@ -57,111 +54,272 @@
         <span style="font-size: 40px;">Pet Shop</span>
         <div class='eachanimal'>
             <div class=shopheading>
-                Dogs For Sale
+                Cats For Adoption
             </div>
             <div class=petinfo>
                 <div class=eachpet>
-                    <img src='./assets/dog1.jpg' class=eachpic>
-                    <span class=petname>Amogus</span>
-                    Bull Dog Puppy<br />
-                    3 Months Old<br />
-                    <i>Male</i>
-                    Pure Breed<br />
-                    <b>₹50,000</b>
-                </div>
-                <div class=eachpet>
-                    <img src="./assets/dog2.jpg" class=eachpic>
-                    <span class=petname>Big Chungus</span>
-                    Labrador Puppy<br />
-                    <span>1<sup>1/2</sup> Months Old</span>
-                    <i>Female</i>
-                    Pure Breed</br>
-                    <b>₹30,000</b>
-                </div>
-                <div class=eachpet>
-                    <img src="./assets/dog3.jpg" class=eachpic>
-                    <span class=petname>Juan</span>
-                    German-Shephard Puppy<br />
-                    2 Months Old<br />
-                    <i>Female</i>
-                    Mixed Breed(Double Coated)<br>
-                    <b>₹14,000</b>
-                </div>
-                <div class=eachpet>
-                    <img src="./assets/dog4.jpg" class=eachpic>
-                    <span class=petname>Pog Champ</span>
-                    Pug Puppy<br>
-                    20 Days Old<br>
-                    <i>Male</i>
-                    Mixed Breed<br>
-                    <b>₹8,000</b>
-                </div>
-            </div>
-        </div>
-        <div class=eachanimal>
-            <div class=shopheading>
-                Cats For Sale
-            </div>
-            <div class=petinfo>
-                <div class="eachpet">
-                    <img src="assets/kit1.jpg" class=eachpic>
+                    <img src='./assets/kit1.jpg' class=eachpic alt="Puppy">
                     <span class=petname>Sigma, Alpha, Beta(Pack of 3)</span>
                     3 Feral Kittens<br />
                     2 Months Old<br />
                     <i>Male, Male, Female</i>
                     Feral / Mixed<br />
-                    <b>₹1,000 each</b>
+                    <b>Born: 2022/08/15</b>
+                    <button id="Dog" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class=eachpet>
+                    <img src="./assets/kit2.jpeg" class=eachpic>
+                    <span class=petname>Big Chungus</span>
+                    Chungus Kitten<br />
+                    <span>1<sup>1/2</sup> Months Old</span>
+                    <i>Female</i>
+                    Pure Breed</br>
+                    <b>Born:2022/09/01</b>
+                    <button id="Dog1" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class=eachpet>
+                    <img src="./assets/kit3.jpg" class=eachpic>
+                    <span class=petname>Juan</span>
+                    Juan Kitten<br />
+                    2 Months Old<br />
+                    <i>Female</i>
+                    Mixed Breed(Double Coated)<br>
+                    <b>Born:2022/08/15</b>
+                    <button id="Dog2" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class=eachpet>
+                    <img src="./assets/Japanese%20bobtail.jpeg" class=eachpic>
+                    <span class=petname>Pog Champ</span>
+                    Pog Kitten<br>
+                    20 Days Old<br>
+                    <i>Male</i>
+                    Mixed Breed<br>
+                    <b>Born:2022/09/25</b>
+                    <button id="Dog3" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class=eachpet>
+                    <img src="./assets/Cornish.jpeg" class=eachpic>
+                    <span class=petname>Pog Champ</span>
+                    Cornish Breed<br>
+                    2 Years<br>
+                    <i>Male</i>
+                    Mixed Breed<br>
+                    <b>Born:2020/09/25</b>
+                    <button id="Dog4" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class=eachpet>
+                    <img src="./assets/Devon.jpeg" class=eachpic>
+                    <span class=petname>Devon</span>
+                    Devon Mixed.<br>
+                    2 Years<br>
+                    <i>Male</i>
+                    Mixed Breed<br>
+                    <b>Born:2020/09/25</b>
+                    <button id="Dog5" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class=eachpet>
+                    <img src="./assets/Egyptian.jpeg" class=eachpic>
+                    <span class=petname>Egyptian Champ</span>
+                    Egyptian Mixed<br>
+                    1 Years<br>
+                    <i>Male</i>
+                    Mixed Breed<br>
+                    <b>Born:2021/09/25</b>
+                    <button id="Dog6" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class=eachpet>
+                    <img src="./assets/European.jpeg" class=eachpic>
+                    <span class=petname>European Champ </span>
+                    European Breed<br>
+                    1 Years<br>
+                    <i>Male</i>
+                    Mixed Breed<br>
+                    <b>Born:2021/09/25</b>
+                    <button id="Dog7" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class=eachpet>
+                    <img src="./assets/Exotic%20Shorthair.jpeg" class=eachpic>
+                    <span class=petname>Exotic ShortHair </span>
+                    Exotic Shorthair Breed<br>
+                    1 Years<br>
+                    <i>Male</i>
+                    Mixed Breed<br>
+                    <b>Born:2021/09/25</b>
+                    <button id="Dog8" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class=eachpet>
+                    <img src="./assets/Havana.jpeg" class=eachpic>
+                    <span class=petname>Havana King </span>
+                    Havana Breed<br>
+                    2 Years<br>
+                    <i>Male</i>
+                    Mixed Breed<br>
+                    <b>Born:2020/09/25</b>
+                    <button id="Dog9" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class=eachpet>
+                    <img src="./assets/Himilayan.jpeg" class=eachpic>
+                    <span class=petname>Himalayan King </span>
+                    Himalayan Mixed.<br>
+                    1 Years<br>
+                    <i>Male</i>
+                    Mixed Breed<br>
+                    <b>Born:2021/09/25</b>
+                    <button id="Dog10" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+            </div>
+        </div>
+        <div class=eachanimal>
+            <div class=shopheading>
+                Dogs For Adoption
+            </div>
+            <div class=petinfo>
+                <div class="eachpet">
+                    <img src="assets/dog1.jpg" class=eachpic>
+                    <span class=petname>Sigma Dog</span>
+                    Sigma Male<br />
+                    2 Months Old<br />
+                    <i>Male</i>
+                    Mixed<br />
+                    <b>Born: 2022/08/15</b>
+                    <button id="cat" onclick="adopt(this.id)" class ="button button0">Adopt </button>
                 </div>
                 <div class="eachpet">
-                    <img src="assets/kit2.jpeg" class=eachpic>
-                    <span class=petname>Karen</span>
-                    Persian Kitten<br />
+                    <img src="assets/dog2.jpg" class=eachpic>
+                    <span class=petname>Beta</span>
+                    Beta Puppy<br />
                     1 Month Old<br />
                     <i>Female</i>
                     Pure(Double Coat)<br />
-                    <b>₹20,000</b>
+                    <b>Born: 2022/09/15</b>
+                    <button id="cat1" onclick="adopt(this.id)" class ="button button0">Adopt </button>
                 </div>
                 <div class="eachpet">
-                    <img src="assets/kit3.jpg" class=eachpic>
+                    <img src="assets/dog3.jpg" class=eachpic>
                     <span class=petname>Schmuserkadser</span>
-                    Siamese Kitten<br />
+                    Siamese Puppy<br />
                     18 Days Old<br />
                     <i>Female</i>
                     Pure(Double Coat)<br />
-                    <b>₹25,000</b>
+                    <b>Born: 2022/09/28</b>
+                    <button id="cat2" onclick="adopt(this.id)" class ="button button0">Adopt </button>
                 </div>
+                <div class="eachpet">
+                    <img src="assets/dog4.jpg" class=eachpic>
+                    <span class=petname>Roger</span>
+                    Siamese Puppy<br />
+                    18 Days Old<br />
+                    <i>Female</i>
+                    Pure(Double Coat)<br />
+                    <b>Born: 2022/09/28</b>
+                    <button id="cat3" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class="eachpet">
+                    <img src="assets/A%20Shepherd.jpg" class=eachpic>
+                    <span class=petname>Shepherd</span>
+                    Shepherd<br />
+                    2 Years<br />
+                    <i>Female</i>
+                    Pure<br />
+                    <b>Born: 2020/09/28</b>
+                    <button id="cat4" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class="eachpet">
+                    <img src="assets/A%20Terrier.jpeg" class=eachpic>
+                    <span class=petname>Terrier</span>
+                    Terrier<br />
+                    2 Years<br />
+                    <i>Female</i>
+                    Pure<br />
+                    <b>Born: 2020/09/28</b>
+                    <button id="cat5" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class="eachpet">
+                    <img src="assets/Australian.jpeg" class=eachpic>
+                    <span class=petname>Rostry</span>
+                    Australian Breed<br />
+                    2 Years<br />
+                    <i>Female</i>
+                    Pure<br />
+                    <b>Born: 2020/09/28</b>
+                    <button id="cat6" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class="eachpet">
+                    <img src="assets/Azawakh.jpeg" class=eachpic>
+                    <span class=petname>Azow</span>
+                    Azawakh<br />
+                    1 Years<br />
+                    <i>Female</i>
+                    Mixed<br />
+                    <b>Born: 2021/09/28</b>
+                    <button id="cat7" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class="eachpet">
+                    <img src="assets/Barbado.jpeg" class=eachpic>
+                    <span class=petname>Terry</span>
+                    Barbado<br />
+                    2 Years<br />
+                    <i>Female</i>
+                    Pure<br />
+                    <b>Born: 2020/09/28</b>
+                    <button id="cat8" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class="eachpet">
+                    <img src="assets/Basenji.jpeg" class=eachpic>
+                    <span class=petname>Rocky</span>
+                    Basenji Nuke<br />
+                    2 Years<br />
+                    <i>Male</i>
+                    Healthy and loves outdoors<br />
+                    <b>Born: 2020/09/28</b>
+                    <button id="cat9" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class="eachpet">
+                    <img src="assets/Beagle.jpeg" class=eachpic>
+                    <span class=petname>Tommy</span>
+                    Beagle Breed<br />
+                    2 Years<br />
+                    <i>Female</i>
+                    Healthy and very vibrant.<br />
+                    <b>Born: 2020/09/28</b>
+                    <button id="cat10" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+
             </div>
         </div>
         <div class="eachanimal">
             <div class="shopheading">
-                Other Pets
+                Birds for Adoption.
             </div>
             <div class="petinfo">
                 <div class="eachpet">
-                    <img src="./assets/oth1.jpg" class=eachpic>
+                    <img src="./assets/Shorebirds.jpeg" class=eachpic>
                     <span class="petname">Nemo</span>
-                    Goldfish Juvenile<br>
-                    5 Days Old<br>
+                    ShoreBirds Type<br>
+                    3 months<br>
                     Golden<br>
-                    <b>₹150</b>
+                    <b>Born: 2022/07/15</b>
+                    <button id="Bird" onclick="adopt(this.id)" class ="button button0">Adopt </button>
                 </div>
                 <div class="eachpet">
-                    <img src="./assets/oth2.jpg" class=eachpic>
+                    <img src="./assets/Mousebird.jpeg" class=eachpic>
                     <span class="petname">Chonk</span>
-                    Syrian Hamster Pup<br>
-                    2 Weeks Old<br>
+                    Mouse Bird<br>
+                    5 Months<br>
                     <i>Male</i>
                     Pure(Dual Coat)<br>
-                    <b>₹3,000</b>
+                    <b>Born: 2022/05/06</b>
+                    <button id="Bird1" onclick="adopt(this.id)" class ="button button0">Adopt </button>
                 </div>
                 <div class="eachpet">
-                    <img src="./assets/oth3.jpg" class=eachpic>
+                    <img src="./assets/Pigeons,jpeg.jpeg" class=eachpic>
                     <span class="petname">Boony</span>
-                    Blanc de hotot Bunny<br>
-                    3 Weeks Old<br>
+                    Boony Type<br>
+                    6 Months.<br>
                     <i>Female</i>
                     Pure<br>
-                    <b>₹2,000</b>
+                    <b>Born: 2022/04/20</b>
+                    <button id="Bird2" onclick="adopt(this.id)" class ="button button0">Adopt </button>
                 </div>
                 <div class="eachpet">
                     <img src="./assets/oth4.jpg" class=eachpic>
@@ -170,114 +328,93 @@
                     1 Month Old<br>
                     <i>Male, Female Pair</i>
                     Green and BLue with black pattern<br>
-                    <b>₹400</b>
+                    <b>Born: 2022/09/10</b>
+                    <button id="Bird3" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class="eachpet">
+                    <img src="./assets/sunbitten.jpeg" class=eachpic>
+                    <span class="petname">Sunbitten</span>
+                    Sunbitten<br>
+                    2 Month Old<br>
+                    <i>Male</i>
+                    Has a black pattern<br>
+                    <b>Born: 2022/08/10</b>
+                    <button id="Bird4" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class="eachpet">
+                    <img src="./assets/Turkey.jpeg" class=eachpic>
+                    <span class="petname">Love</span>
+                    Turkey Base<br>
+                    6 Month Old<br>
+                    <i>Female</i>
+                    Friendly and loves outdoor<br>
+                    <b>Born: 2022/03/10</b>
+                    <button id="Bird5" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class="eachpet">
+                    <img src="./assets/Loon.jpeg" class=eachpic>
+                    <span class="petname">Bess</span>
+                    Loon <br>
+                    1 Month Old<br>
+                    <i>Male, Female Pair</i>
+                    Pure Breed.<br>
+                    <b>Born: 2022/09/10</b>
+                    <button id="Bird6" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class="eachpet">
+                    <img src="./assets/Crane.jpeg" class=eachpic>
+                    <span class="petname">Bestie.</span>
+                    Crane Bear<br>
+                    1 Year<br>
+                    <i>Male</i>
+                    Sometimes it feeds on seeds.<br>
+                    <b>Born: 2021/09/10</b>
+                    <button id="Bird7" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class="eachpet">
+                    <img src="./assets/Mesite.jpeg" class=eachpic>
+                    <span class="petname">Situ</span>
+                   Mesite strain<br>
+                    2 Years<br>
+                    <i>Male</i>
+                    White with black pattern<br>
+                    <b>Born: 2020/09/10</b>
+                    <button id="Bird8" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class="eachpet">
+                    <img src="./assets/Turacos.jpeg" class=eachpic>
+                    <span class="petname">Turry.</span>
+                    Turacos <br>
+                    2 Years<br>
+                    <i>Male</i>
+                    Green and an homely bird.<br>
+                    <b>Born: 2020/09/10</b>
+                    <button id="Bird9" onclick="adopt(this.id)" class ="button button0">Adopt </button>
+                </div>
+                <div class="eachpet">
+                    <img src="./assets/Pelican.jpeg" class=eachpic>
+                    <span class="petname">Pelly.</span>
+                    Pelly <br>
+                    1 Month Old<br>
+                    <i>Female</i>
+                    It Loves to swim more often<br>
+                    <b>Born: 2022/09/10</b>
+                    <button id="Bird10" onclick="adopt(this.id)" class ="button button0">Adopt </button>
                 </div>
             </div>
         </div>
     </section>
-    <section class=allaccessories id=acc>
-        <span style="font-size: 35px;">Pet Accessories</span>
-        <div class=eachanimal style="border: none;">
-            <div class=shopheading>Pet Foods</div>
-            <div class="petinfo" style="padding: 6px 0px 0px 8px">
-                <div class="eachpet eachitem">
-                    <img src="./assets/food1.png" class=foodpic>
-                    <span class="petname">Dog Food</span>
-                    Pedigree Chopped Dinner<br>
-                    <i>All dog breeds</i>
-                    Dry Formula, 3KG<br />
-                    Beef, Chicken and whole grains<br>
-                    <b>₹500</b>
-                </div>
-                <div class="eachpet eachitem">
-                    <img src="./assets/food2.png" class=foodpic>
-                    <span class="petname">Cat Food</span>
-                    Whiskas Meal<br>
-                    <i>All cat breeds</i>
-                    Dry Formula, 1.2KG<br />
-                    Salman, Tuna and whole grains<br>
-                    <b>₹300</b>
-                </div>
-                <div class="eachpet eachitem">
-                    <img src="./assets/food3.png" class=foodpic>
-                    <span class="petname">Bird Food</span>
-                    Kaytee Forti Diet<br>
-                    <i>Suitable for parakeet, parrots</i>
-                    Dry seeds, 1KG<br />
-                    Veggies, Whole grains<br>
-                    <b>₹200</b>
-                </div>
-                <div class="eachpet eachitem">
-                    <img src="./assets/food4.png" class=foodpic>
-                    <span class="petname">Rabbit Food</span>
-                    Kaytee Timothy complete<br>
-                    <i>All rabbit breeds</i>
-                    Dry seeds, 3KG<br />
-                    Alfafa, carrot and fibre<br>
-                    <b>₹250</b>
-                </div>
-            </div>
-        </div>
-        <div class="eachanimal" style="border:none;">
-            <div class="shopheading">Pet Items</div>
-            <div class="petinfo" style="padding: 6px 0px 0px 8px">
-                <div class="eachpet eachitem">
-                    <img src="./assets/item1.png" class="foodpic accitem">
-                    <span class="petname">Pet Toy</span>
-                    Soft Cloth Duck<br>
-                    <i>For Dogs and cats</i>
-                    Not Suitable for strong chewer<br>
-                    Polymer non-toxic<br>
-                    <b>₹80</b>
-                </div>
-                <div class="eachpet eachitem">
-                    <img src="./assets/item2.png" class="foodpic accitem">
-                    <span class="petname">Pet Toy</span>
-                    Soft ball squishy<br>
-                    For Dogs and Cats<br>
-                    Plastic non-toxic<br>
-                    <b>₹50</b>
-                </div>
-                <div class="eachpet eachitem">
-                    <img src="./assets/item3.png" class="foodpic accitem">
-                    <span class="petname">Fish Aquarium</span>
-                    Air pumped with flora<br>
-                    <i>For All small and medium fish</i>
-                    150x60x50cm 43 litres<br>
-                    Lighting Effect<br>
-                    <b>₹3000</b>
-                </div>
-                <div class="eachpet eachitem">
-                    <img src="./assets/item4.png" class="foodpic accitem" style="width: 230px;">
-                    <span class="petname">Pet Leash</span>
-                    Strong polymer material, 1m<br>
-                    Suitable for all pets<br>
-                    Hook Closure<br>
-                    Collar not included<br>
-                    <b>₹300</b>
-                </div>
-                <div class="eachpet eachitem">
-                    <img src="./assets/item5.jpg" class="foodpic accitem" style="width: 200px;">
-                    <span class="petname">Bird Cage</span>
-                    Large Spacious Cage<br>
-                    Suitable for most birds<br>
-                    Roof and playground<br>
-                    50x70x40cm<br>
-                    <b>₹2000</b>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <section class=end id=aboutus>
         <div class=alldivs>
             <img src="./assets/animal-therapy.png" style="width: 30px; height: 30px; margin-right: 3px;">
             <div class=eachabt>About Us<div class=actualtext>
                 Our love for pets made us start our shop, we are dedicated to delivering the best 
                 customer service and the highest quality of pet products</div></div>
-                <div class=eachabt>Reach us at<div class=actualtext>223, Godavari Laxmi Ind. Cmplex, Pokharan Road,
-                    Vartak Nagar, Thane (w)<br>
-                    Mumbai, Maharashtra, 400606<br>
-                	+91-22-2225856282</div></div>
+                <div class=eachabt>Reach us at<div class=actualtext>223, Godavari Laxmi,
+                    Boulevard st<br>
+                    MontGomery<br>
+                	+123456789</div></div>
                 <div class=eachabt>Follow us at<div class=actualtext style="font-weight: bold;">
                     <a href="https://www.facebook.com/" target="_blank">Facebook</a><br>
                     <a href="https://www.instagram.com/" target="_blank">Instagram</a><br>

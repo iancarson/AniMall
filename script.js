@@ -20,7 +20,26 @@ dark_mode_label.addEventListener('click', ()=>{
         }
     },0)    
 })
+function adopt(Id)
+{
+    if(localStorage.getItem(Id) == null){
+        if(confirm("Click Ok to successfully adopt."))
+        {
+            localStorage.setItem(Id,"adopted")
+            alert("You have successfully adopted this Pet.")
+        }
+    }
+    else
+    {
+        adoptNo()
+    }
 
+
+}
+function adoptNo()
+{
+    alert("Sorry, this is already adopted.")
+}
 setInterval(()=>{
     const btn = window.document.querySelector('.slider .slides #r'+counter);
     const shown_label = window.document.getElementById('b'+counter)

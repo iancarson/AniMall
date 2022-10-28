@@ -90,6 +90,24 @@ header{
     width: 500%;
     height: 500px;
 }
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button0 {border-radius: 12px;}
+.button5 {border-radius: 50%;}
 .slide{
     width: 20%;
     transition: 2s;
@@ -97,6 +115,11 @@ header{
 .slide img{
     height: 500px;
     width: 100%;
+}
+.overlay-right .btn-secondary {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 .slides input{
     display: none;
